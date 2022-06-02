@@ -1,0 +1,1 @@
+require('http').createServer(require('express')().get('/', (req, res) => res.send('Web 1'))).listen(3000);
