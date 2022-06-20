@@ -1,0 +1,55 @@
+body {
+    background-color: #222;
+    color: #eee;
+}
+
+.alerts {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 30%;
+    max-width: 400px;
+}
+
+header {
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+header .home {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+header #subtitle {
+    background-color: #333;
+    margin: 0;
+    padding: 5px;
+}
+
+header .top {
+    padding: 15px;
+}
+
+.settings {
+    width: 80%;
+    max-width: 800px;
+    margin: 25px auto;
+}
+
+.settings .icon-container {
+    text-align: center;
+    font-size: 64px;
+    cursor: pointer;
+}
+
+.settings .icon-container #icon {
+    display: none;
+}
+
+.settings > .row {
+    margin-bottom: 25px;
+}

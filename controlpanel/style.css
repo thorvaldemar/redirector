@@ -1,0 +1,91 @@
+body {
+    background-color: #222;
+    color: #eee;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 15px;
+    text-align: center;
+}
+
+.processes {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 21% 21% 21% 21%;
+    gap: 5%;
+}
+
+.processes .process {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px black;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.processes .new-process {
+    background-color: #2a2a2a;
+    color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.processes .process:hover {
+    transform: scale(1.1);
+}
+
+.processes .process i {
+    font-size: 52px;
+}
+
+.processes .process .info {
+    text-align: left;
+    font-size: 12px;
+}
+
+.processes .process .info p {
+    margin: 0;
+    padding: 0;
+}
+
+.processes .process .info #status {
+    position: relative;
+    padding-left: 20px;
+}
+
+.processes .process .info #status::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #F44336;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.processes .process .info #status[status="stopped"]::before { background-color: #F44336; }
+.processes .process .info #status[status="starting"]::before { background-color: #ffc107; }
+.processes .process .info #status[status="running"]::before { background-color: #4caf50; }
+
+.processes .process .info #title {
+    font-size: 26px;
+    margin: 0 0 -5px;
+}
+
+.processes .process .info .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.processes .process .info #domain {
+    font-size: 14px;
+}
